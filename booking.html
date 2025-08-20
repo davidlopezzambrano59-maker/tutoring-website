@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Session - DLZ Tutors</title>
+    <meta name="description" content="Book your premium A-Level Physics tutoring session. Choose from one-to-one, small group, or academy sessions with flexible scheduling.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Calendly inline widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly inline widget end -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="DLZ Tutors Logo" class="nav-logo">
+                <div class="nav-text">
+                    <h2 class="brand-name">dlztutors</h2>
+                    <span class="nav-tagline handwriting">leveraging knowledge</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="materials.html" class="nav-link">Materials</a></li>
+                <li><a href="course.html" class="nav-link">Complete Course</a></li>
+                <li><a href="booking.html" class="nav-link active">Book Session</a></li>
+                <li><a href="booking.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header booking-header">
+        <div class="container">
+            <div class="header-content">
+                <span class="header-badge">Book Your Session</span>
+                <h1>Start Your Physics Excellence Journey</h1>
+                <p>Choose your preferred tutoring format and schedule your first session. Transform your physics understanding with expert guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Options -->
+    <section class="booking-options">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Choose Your Service</span>
+                <h2>Select Your Tutoring Format</h2>
+                <p>Pick the option that best suits your learning style and goals.</p>
+            </div>
+            <div class="booking-grid">
+                <div class="booking-card" data-service="one-to-one">
+                    <div class="service-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>One-to-One Elite</h3>
+                    <p>Premium personalized tutoring with complete individual attention</p>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>60-90 minutes per session</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-pound-sign"></i>
+                            <span>From £80/hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Flexible scheduling</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary select-service" data-service="one-to-one">Select This Option</button>
+                </div>
+
+                <div class="booking-card" data-service="small-group">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Group Masterclass</h3>
+                    <p>Intimate group sessions (2-4 students) with collaborative learning</p>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>90 minutes per session</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-pound-sign"></i>
+                            <span>From £45/hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>2-4 students max</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary select-service" data-service="small-group">Select This Option</button>
+                </div>
+
+                <div class="booking-card" data-service="academy">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Physics Academy</h3>
+                    <p>Comprehensive group sessions (5-8 students) with structured curriculum</p>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 hours per session</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-pound-sign"></i>
+                            <span>From £30/hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>5-8 students max</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary select-service" data-service="academy">Select This Option</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section" id="booking-form">
+        <div class="container">
+            <div class="booking-content">
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Tell Us About Yourself</h2>
+                        <p>Please provide your details so we can tailor the perfect tutoring experience for you.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="yearGroup">Year Group *</label>
+                            <select id="yearGroup" name="yearGroup" required>
+                                <option value="">Select your year group</option>
+                                <option value="year-12">Year 12 (AS Level)</option>
+                                <option value="year-13">Year 13 (A2 Level)</option>
+                                <option value="gap-year">Gap Year</option>
+                                <option value="adult-learner">Adult Learner</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="currentGrade">Current Physics Grade</label>
+                            <select id="currentGrade" name="currentGrade">
+                                <option value="">Select current grade</option>
+                                <option value="A*">A*</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="U">U</option>
+                                <option value="not-started">Haven't started A-Level yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="targetGrade">Target Grade *</label>
+                            <select id="targetGrade" name="targetGrade" required>
+                                <option value="">Select target grade</option>
+                                <option value="A*">A*</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Preferred Service *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select service type</option>
+                                <option value="one-to-one">One-to-One Elite (£80/hr)</option>
+                                <option value="small-group">Small Group Masterclass (£45/hr)</option>
+                                <option value="academy">Physics Academy (£30/hr)</option>
+                                <option value="complete-course">Complete Course Program</option>
+                                <option value="materials-only">Materials Access Only</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="schedule">Preferred Schedule</label>
+                            <select id="schedule" name="schedule">
+                                <option value="">Select preferred time</option>
+                                <option value="weekday-morning">Weekday Mornings (9am-12pm)</option>
+                                <option value="weekday-afternoon">Weekday Afternoons (12pm-5pm)</option>
+                                <option value="weekday-evening">Weekday Evenings (5pm-8pm)</option>
+                                <option value="weekend-morning">Weekend Mornings (9am-12pm)</option>
+                                <option value="weekend-afternoon">Weekend Afternoons (12pm-5pm)</option>
+                                <option value="flexible">Flexible - any time</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specificTopics">Specific Topics to Focus On</label>
+                            <textarea id="specificTopics" name="specificTopics" rows="3" placeholder="e.g., Mechanics, Electromagnetism, Atomic Physics, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goals">Learning Goals & Challenges</label>
+                            <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your current challenges, specific goals, university aspirations, or any other relevant information..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">How soon would you like to start?</label>
+                            <select id="urgency" name="urgency">
+                                <option value="">Select timeframe</option>
+                                <option value="immediately">Immediately (this week)</option>
+                                <option value="next-week">Next week</option>
+                                <option value="within-month">Within the next month</option>
+                                <option value="next-term">Next term/semester</option>
+                                <option value="flexible">Flexible timing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive study tips and physics insights via email
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the Terms of Service and Privacy Policy *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Application
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Application Submitted Successfully!</h3>
+                        <p>Thank you for your interest in Elite Physics tutoring. We've received your application and will review it carefully.</p>
+                        <div class="next-steps">
+                            <h4>What happens next:</h4>
+                            <ul>
+                                <li><i class="fas fa-clock"></i> We'll review your application within 24 hours</li>
+                                <li><i class="fas fa-phone"></i> Our team will contact you to discuss your needs</li>
+                                <li><i class="fas fa-calendar"></i> We'll help you schedule your first session</li>
+                                <li><i class="fas fa-rocket"></i> Begin your journey to physics excellence!</li>
+                            </ul>
+                        </div>
+                        <p class="contact-info">
+                            <strong>Need immediate assistance?</strong><br>
+                            Call us at +44 (0) 20 1234 5678 or email info@dlztutors.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Calendly Integration -->
+                <div class="calendly-container">
+                    <div class="calendly-header">
+                        <h2>Schedule Your Session</h2>
+                        <p>After submitting your details, you can immediately book your first session using our calendar below.</p>
+                        <div class="calendly-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Real-time availability</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Instant confirmation</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-video"></i>
+                                <span>Online or in-person</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" 
+                         data-url="https://calendly.com/your-calendar-link" 
+                         style="min-width:320px;height:700px;">
+                        <!-- Placeholder for Calendly widget -->
+                        <div class="calendly-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h3>Calendar Integration</h3>
+                                <p>To complete the Calendly integration, please:</p>
+                                <ol>
+                                    <li>Create your Calendly account</li>
+                                    <li>Set up your availability</li>
+                                    <li>Replace "your-calendar-link" in the code with your actual Calendly URL</li>
+                                </ol>
+                                <a href="https://calendly.com" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Set Up Calendly
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Calendly inline widget end -->
+
+                    <div class="booking-notes">
+                        <h4>Booking Information:</h4>
+                        <ul>
+                            <li><i class="fas fa-info-circle"></i> First consultation is always free (30 minutes)</li>
+                            <li><i class="fas fa-shield-alt"></i> No obligation - cancel anytime with 24hrs notice</li>
+                            <li><i class="fas fa-headset"></i> Technical support available for online sessions</li>
+                            <li><i class="fas fa-map-marker-alt"></i> In-person sessions available in London area</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="booking-faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Frequently Asked</span>
+                <h2>Booking Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How quickly can I start?</h4>
+                    <p>We can typically arrange your first session within 48-72 hours of your application, depending on your schedule and tutor availability.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if I need to cancel?</h4>
+                    <p>We offer flexible cancellation with 24 hours notice. Emergency cancellations are handled case-by-case with full understanding.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are online sessions as effective?</h4>
+                    <p>Absolutely! Our online platform includes interactive whiteboards, screen sharing, and all the tools needed for effective physics tutoring.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do payments work?</h4>
+                    <p>We accept payments by bank transfer, card, or direct debit. Payment is typically required 24 hours before each session or monthly for regular students.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What materials do I need?</h4>
+                    <p>Just bring your textbooks, any specific questions, and a willingness to learn! We provide all additional resources and materials.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can parents attend sessions?</h4>
+                    <p>Parents are welcome to sit in on sessions, especially for younger students. We also provide regular progress reports to keep parents informed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Speak directly with our team</p>
+                    <a href="tel:+442012345678">+44 (0) 20 1234 5678</a>
+                    <span class="availability">Mon-Fri 9am-8pm, Sat 9am-5pm</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Quick response guaranteed</p>
+                    <a href="mailto:info@dlztutors.com">info@dlztutors.com</a>
+                    <span class="availability">Response within 4 hours</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Instant help and guidance</p>
+                    <button class="btn btn-outline" onclick="startLiveChat()">Start Chat</button>
+                    <span class="availability">Available during business hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="dlztutors Logo" class="footer-logo">
+                        <h3 class="brand-name footer-brand-name">dlztutors</h3>
+                    </div>
+                    <p>Premium A-Level Physics tutoring with guaranteed results. Transform your understanding and achieve excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="booking.html">One-to-One Tutoring</a></li>
+                        <li><a href="booking.html">Small Group Sessions</a></li>
+                        <li><a href="booking.html">Physics Academy</a></li>
+                        <li><a href="materials.html">Study Materials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="materials.html">Condensed Notes</a></li>
+                        <li><a href="course.html">Complete Course</a></li>
+                        <li><a href="materials.html">Practice Papers</a></li>
+                        <li><a href="materials.html">Revision Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@dlztutors.com</li>
+                        <li><i class="fas fa-phone"></i> +44 (0) 20 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DLZ Tutors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
