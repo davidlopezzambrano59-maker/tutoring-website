@@ -2579,6 +2579,337 @@ p {
     margin-top: var(--spacing-sm);
 }
 
+/* ===== ABOUT US PAGE STYLES ===== */
+.about-hero {
+    padding: 8rem 0 4rem;
+}
+
+.founder-section {
+    padding: 6rem 0;
+    background: var(--gray-50);
+}
+
+.founder-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.founder-image {
+    position: relative;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-placeholder:hover {
+    transform: translateY(-5px);
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.founder-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.founder-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.founder-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+}
+
+.founder-achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.achievement i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    min-width: 2rem;
+}
+
+.achievement h4 {
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 0.25rem;
+}
+
+.achievement p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+.mission-section {
+    padding: 6rem 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.mission-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.mission-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.mission-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.mission-card p {
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+.values-section {
+    padding: 6rem 0;
+    background: var(--gray-50);
+}
+
+.values-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.values-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 2rem;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.value-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.value-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+    min-width: 2rem;
+}
+
+.value-item h4 {
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.value-item p {
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+.values-image .image-placeholder {
+    height: 500px;
+}
+
+.experience-section {
+    padding: 6rem 0;
+}
+
+.experience-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 16px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.stat-card p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.personal-section {
+    padding: 6rem 0;
+    background: var(--gray-50);
+}
+
+.personal-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.personal-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 1.5rem;
+}
+
+.personal-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+}
+
+.personal-interests {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.interest {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.interest i {
+    color: var(--primary-color);
+}
+
+/* Mobile Responsiveness for About Page */
+@media (max-width: 768px) {
+    .founder-content,
+    .values-content,
+    .personal-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .founder-image .image-placeholder,
+    .values-image .image-placeholder {
+        height: 300px;
+    }
+    
+    .founder-info h2,
+    .values-text h2,
+    .personal-text h2 {
+        font-size: 2rem;
+    }
+    
+    .personal-interests {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .experience-stats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
     .hero-content {
