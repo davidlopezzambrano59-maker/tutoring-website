@@ -285,7 +285,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 2px var(--spacing-xl);
     max-width: 1200px;
     margin: 0 auto;
 }
