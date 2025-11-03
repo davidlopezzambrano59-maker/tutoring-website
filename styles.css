@@ -130,6 +130,10 @@ p {
     background-clip: text;
 }
 
+.white-text {
+    color: white !important;
+}
+
 /* ===== UTILITY CLASSES ===== */
 .container {
     max-width: 1200px;
@@ -293,7 +297,7 @@ p {
 }
 
 .nav-logo {
-    height: 60px;
+    height: 120px;
     width: auto;
     transition: all 0.3s ease;
     object-fit: contain;
@@ -958,7 +962,7 @@ p {
 }
 
 .footer-logo {
-    height: 45px;
+    height: 80px;
     width: auto;
     filter: brightness(0) invert(1); /* Makes logo white */
     transition: all 0.3s ease;
@@ -3751,11 +3755,11 @@ p {
     }
     
     .nav-logo {
-        height: 45px;
+        height: 90px;
     }
     
     .footer-logo {
-        height: 35px;
+        height: 65px;
     }
     
     .nav-brand {
